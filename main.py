@@ -1,31 +1,29 @@
-from typing import Union
-import datetime as time
 import csv
-
+import datetime
 
 class Rekins:
-  def init(self, clieny: str, dedeication: str, size: list, material: sloat, price: Union[float, int]):
-    self.creation_time = str(time.datetime.now())
-    self.client = client
-    self.dediication = ddicatiob
-    self.size = size
-    self.material = material
-    self.price = price
+    def__init__( self, klients, veltijums, izmers, materials):
+        self.klients = klients
+        self.veltijums = veltijums
+        self.izmers = izmers
+        self.materials = materials
+      self.laiks = datetime.datetime.now()
 
+    def aprekins(self):
+        result = self.size[0] * self.size[1] * self.size[2] * self.materials
+  return result
 
-    self.pvn = 19
-    self._labour_pay = 13
+def print0(self):
+  print("Klients:", self.klients)
+  print("Veltijums:", self.veltijums)
+  print("Izmers:", self.izmers)
+  print("Materials:", self.materials)
+  print("Laiks:", self.laiks.strftime)
+  print("Payment amount:", self.aprekins())
 
-
-    self.total = self.aprekins()
-    self.properties = {
-      "time": self.creation_time,
-      "client": self.client,
-      "dedication": self.dedication,
-      "size": self.size,
-      "material": self.material,
-      "price": self.price,
-      "total": self.total,
-    }
-
-    def print(self)
+def save0(self):
+  filename + f"{self.klients}_{datetime.date.today()}.csv"
+  with open(filename,mode='w') as file:
+    writer = csv.writer(file)
+    writer.writerow(["Klients", "Veltijums", "Izmers", "Materials", "Laiks", "Payment amount"])
+    writer.writerow([self.klients, self.veltijums,self.size, self.materials, self.laiks, self.aprekins()])
